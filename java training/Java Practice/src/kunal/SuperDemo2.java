@@ -1,0 +1,22 @@
+package kunal;
+
+class Employee1{
+	int id;
+	String nameString;
+	public Employee1(int id, String nameString) {
+		this.id = id;
+		this.nameString = nameString;
+	}
+	
+}
+public class SuperDemo2 {
+	int class1;
+	
+	public SuperDemo2(int id,String nameString, int class1) {
+		super();
+		this.class1 = class1;
+		
+	}
+	
+	
+}

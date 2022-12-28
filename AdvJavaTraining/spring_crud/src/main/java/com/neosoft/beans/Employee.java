@@ -1,0 +1,46 @@
+package com.neosoft.beans;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="EmpSpring")
+public class Employee {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int empno;
+	private String empnameString;
+	private int empsal;
+	public int getEmpno() {
+		return empno;
+	}
+	public void setEmpno(int empno) {
+		this.empno = empno;
+	}
+	public String getEmpnameString() {
+		return empnameString;
+	}
+	public void setEmpnameString(String empnameString) {
+		this.empnameString = empnameString;
+	}
+	public int getEmpsal() {
+		return empsal;
+	}
+	public void setEmpsal(int empsal) {
+		this.empsal = empsal;
+	}
+	public Employee(String empnameString, int empsal) {
+		super();
+		this.empnameString = empnameString;
+		this.empsal = empsal;
+	}
+	public Employee() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "Employee [empno=" + empno + ", empnameString=" + empnameString + ", empsal=" + empsal + "]";
+	}
+	
+	
+}

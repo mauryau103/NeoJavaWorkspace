@@ -1,0 +1,13 @@
+package kunal;
+
+class Demo{
+	String nameString="umesh";
+}
+public class SuperDemo extends Demo{
+	String nameString="Vimlesh";
+	
+public static void main(String[] args) {
+	SuperDemo superDemo = new SuperDemo();
+	System.out.println(superDemo.nameString;);
+}
+}

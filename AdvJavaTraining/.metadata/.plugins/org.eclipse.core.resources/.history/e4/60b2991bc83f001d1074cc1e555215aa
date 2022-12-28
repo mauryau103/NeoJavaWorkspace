@@ -1,0 +1,5 @@
+package com.neosoft.jpaMaven;
+
+public class Student {
+
+}

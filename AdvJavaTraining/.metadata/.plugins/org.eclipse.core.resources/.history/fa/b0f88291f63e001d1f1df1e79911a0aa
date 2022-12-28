@@ -1,0 +1,54 @@
+package hiber_crud;
+import javax.persistence.*;
+@Entity
+@Table(name="stud_table")
+public class Student {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private String sname;
+	private String course;
+	private double average;
+	
+	
+	
+	public Student() {
+		super();
+	}
+	public Student(String sname, String course, double average) {
+		super();
+		this.sname = sname;
+		this.course = course;
+		this.average = average;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public double getAverage() {
+		return average;
+	}
+	public void setAverage(double average) {
+		this.average = average;
+	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", sname=" + sname + ", course=" + course + ", average=" + average + "]";
+	}
+	
+	
+}

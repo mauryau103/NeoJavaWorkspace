@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;jdbctemp&apos; to &apos;spring/src/main/java/com.neosoft.spring&apos;&#x0D;&#x0A;- Original project: &apos;spr_core&apos;&#x0D;&#x0A;- Destination element: &apos;spring/src/main/java/com.neosoft.spring&apos;&#x0D;&#x0A;- Original element: &apos;spr_core/src/jdbctemp&apos;" description="Copy package" destination="=spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.neosoft.spring" element1="/src&lt;jdbctemp" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1664530975623" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package first;
+import javax.persistence.*;
+@Entity
+@Table(name="stud_table")
+public class Student {
+	
+	@Id
+	
+}

@@ -1,0 +1,43 @@
+package layer.dao;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import hiber_crud.Student;
+import layer.utility.HibernateUtility;
+
+public class StudentDao {
+	
+public Integer addStudent(String name,String course,double average) {
+		
+		Session session=HibernateUtility.getSessionFactory().openSession();
+		Transaction tx=session.beginTransaction();
+		
+		Student st=new Student(name,course,average);
+		Integer i=(Integer)session.save(st);
+		tx.commit();
+		return i;
+	}
+
+public void listStudent() {
+	Session session=HibernateUtility.getSessionFactory().openSession();
+	Transaction tx=session.beginTransaction();
+	
+	List ls=session.createQuery("from Student").list();
+	for(Iterator it=ls.iterator();it.hasNext();) // one by one want print the data
+	{
+		Student s=(Student)it.next();
+		System.out.println(s.getId());
+		System.out.println(s.getSname());
+		System.out.println(s.getCourse());
+		System.out.println(s.getAverage());
+
+	
+	}
+}
+	
+}

@@ -1,0 +1,25 @@
+package kunal;
+//Java Runtime Polymorphism with Multilevel Inheritance
+class Animal{
+	void eat() {
+		System.out.println("Animal eat");
+	}
+}
+class Dog extends Animal{
+void eat() {
+		System.out.println("Dog Eat");
+	}
+}
+class BabyDog extends Dog{
+void eat() {
+		System.out.println("BabyDog Eat");
+	}
+}
+public class RuntimeDemo {
+public static void main(String[] args) {
+	Animal animal = new Animal();
+	Animal animal2=new Dog();
+	Dog animaBabyDog=new BabyDog();
+}
+}
+

@@ -1,0 +1,19 @@
+package layer.dao;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import layer.utility.HibernateUtility;
+
+public class EmployeeDao {
+	public void addEmployee(EmployeeDao emp) {
+		Session session=HibernateUtility.getSessionFactory().openSession();
+		Transaction tx=session.beginTransaction();
+		
+		session.save(emp);
+		tx.commit();
+	}
+	
+	
+	
+}

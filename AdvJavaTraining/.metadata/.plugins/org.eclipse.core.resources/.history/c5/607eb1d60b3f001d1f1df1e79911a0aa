@@ -1,0 +1,14 @@
+package layer.entity;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="empaddress")
+public class Address {
+	
+	private long id;
+	private String addline1;
+	private String city;
+	private String zipcode;
+
+}

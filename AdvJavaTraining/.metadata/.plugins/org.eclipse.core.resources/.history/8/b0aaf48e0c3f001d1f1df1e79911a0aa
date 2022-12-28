@@ -1,0 +1,42 @@
+package layer.entity;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="empaddress")
+public class Address {
+	
+	private long id;
+	private String addline1;
+	private String city;
+	private String zipcode;
+	
+	private Employee employee;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getAddline1() {
+		return addline1;
+	}
+	public void setAddline1(String addline1) {
+		this.addline1 = addline1;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
+	
+
+	
+}

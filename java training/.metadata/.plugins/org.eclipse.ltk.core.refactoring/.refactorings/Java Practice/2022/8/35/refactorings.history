@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;kunal.sHAPES&apos; to &apos;Shapes&apos;&#x0D;&#x0A;- Original project: &apos;Java Practice&apos;&#x0D;&#x0A;- Original element: &apos;kunal.sHAPES&apos;&#x0D;&#x0A;- Renamed element: &apos;kunal.Shapes&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;sHAPES&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;kunal{sHAPES.java[sHAPES" matchStrategy="1" name="Shapes" qualified="false" references="true" similarDeclarations="false" stamp="1661258359035" textual="false" version="1.0"/>
+</session>

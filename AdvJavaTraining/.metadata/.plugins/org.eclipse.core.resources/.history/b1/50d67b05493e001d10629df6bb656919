@@ -1,0 +1,17 @@
+package first;
+
+import java.lang.module.Configuration;
+
+import javax.net.ssl.SSLSession;
+import javax.sql.rowset.spi.TransactionalWriter;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Configuration cfg= new Configuration().configure();
+		SessionFactory sf=cfg.buildSessionFactory();
+		Session s=sf.openSession();
+		TransactionalWriter tx=s.beginTransaction();
+		
+	}
+}

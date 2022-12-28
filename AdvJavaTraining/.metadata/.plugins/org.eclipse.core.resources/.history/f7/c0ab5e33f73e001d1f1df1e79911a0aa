@@ -1,0 +1,24 @@
+package layer.dao;
+
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import hiber_crud.Student;
+import layer.utility.HibernateUtility;
+
+public class StudentDao {
+public Integer addStudent(String name,String course,double average) {
+		
+		Session session=HibernateUtility.getSessionFactory().openSession();
+		Transaction tx=session.beginTransaction();
+		
+		Student st=new Student(name,course,average);
+		Integer i=(Integer)session.save(st);
+		tx.commit();
+		return i;
+		
+		
+	}
+	
+}

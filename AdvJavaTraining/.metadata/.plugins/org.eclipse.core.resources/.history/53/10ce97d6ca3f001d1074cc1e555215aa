@@ -1,0 +1,7 @@
+package com.neosoft.jpaMaven;
+
+import javax.persistance.*;
+public class Student {
+
+	
+}

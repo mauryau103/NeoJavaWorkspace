@@ -1,0 +1,15 @@
+package layer;
+
+import layer.dao.StudentDao;
+import layer.entity.Student;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		StudentDao studentDao=new StudentDao();
+		Student student = new Student("umesh","Developer",123);
+		studentDao.addStudent(student);
+		
+		studentDao.listStudent();
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.pojo.Author" table="author"> <!--  table is optional attribute -->
+<!--  to map pojo variable with pk column -->
+<id name="authorId" type="int" column="auth_id">
+<!-- how to generate value for primary key column -->
+		<generator class="assigned" /> <!--  developer will provide the value for primary key -->
+</id>
+<property name="authorName" type="string" column="auth_name" />
+<property name="writingExp" type="double" column="writing_exp" />
+
+<!--  column attribute is optional -->
+</class>
+</hibernate-mapping>
+<!--  M -->
